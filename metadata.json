@@ -1,0 +1,7 @@
+{
+  "name": "EletriGo Admin Panel",
+  "description": "An administrative dashboard for EletriGo, an on-demand electrician service. Manage electricians, products for the integrated store, and monitor ongoing services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

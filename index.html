@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EletriGo Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'eletri-blue': {
+                '50': '#f0f8ff',
+                '100': '#e0f1fe',
+                '200': '#c4e6fd',
+                '300': '#9ad9fc',
+                '400': '#6ac7fb',
+                '500': '#46b2f9',
+                '600': '#2b98f5',
+                '700': '#227fe8',
+                '800': '#2163b8',
+                '900': '#205595',
+                '950': '#18355c',
+              },
+              'eletri-yellow': {
+                '50': '#fefce8',
+                '100': '#fef9c3',
+                '200': '#fef08a',
+                '300': '#fde047',
+                '400': '#facc15',
+                '500': '#eab308',
+                '600': '#ca8a04',
+                '700': '#a16207',
+                '800': '#854d0e',
+                '900': '#713f12',
+                '950': '#422006',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes fade-in-right {
+        from {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .animate-fade-in-right {
+        animation: fade-in-right 0.5s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
